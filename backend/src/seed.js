@@ -3,7 +3,7 @@ const bcrypt = require("bcryptjs");
 
 async function seed() {
   try {
-    console.log("🌱 Starting database seed...");
+    console.log("Starting database seed...");
 
     // USERS
     const adminPassword = await bcrypt.hash("admin123", 10);
